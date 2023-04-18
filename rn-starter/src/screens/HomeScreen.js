@@ -1,8 +1,14 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
+const myName = "Mike";
 const HomeScreen = () => {
-  return <Text style={styles.text}>HomeScreen,Mike</Text>;
+  return (
+    <View>
+      <Text style={styles.text}>HomeScreen,Mike</Text>
+      <Text style={styles.text}>My name is {myName}</Text>
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
