@@ -15,6 +15,10 @@ const HomeScreen = ({ navigation }) => {
         title="Go to List DEMO"
         onPress={() => navigation.navigate("List")}
       />
+      <Button
+        title="Go to Image Screen"
+        onPress={() => navigation.navigate("Image")}
+      />
     </View>
   );
 };
@@ -22,7 +26,6 @@ const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 30,
-    
   },
 });
 
