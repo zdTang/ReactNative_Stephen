@@ -3,7 +3,8 @@ import { View, Text, StyleSheet, Button } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
 const myName = "Mike";
-const HomeScreen = () => {
+const HomeScreen = (props) => {
+  console.dir(props);
   return (
     <View>
       <Text style={styles.text}>HomeScreen,Mike</Text>
