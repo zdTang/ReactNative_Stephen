@@ -8,10 +8,11 @@ const HomeScreen = (props) => {
   return (
     <View>
       <Text style={styles.text}>HomeScreen,Mike</Text>
-      <Button title="button" onPress={() => console.log("press")} />
-      <TouchableOpacity onPress={() => console.log("press lIST")}>
-        <Text>Go to List DEMO</Text>
-        <Text>Go to List DEMO</Text>
+      <Button
+        title="Components"
+        onPress={() => props.navigation.navigate("Components")}
+      />
+      <TouchableOpacity onPress={() => props.navigation.navigate("List")}>
         <Text>Go to List DEMO</Text>
       </TouchableOpacity>
     </View>
