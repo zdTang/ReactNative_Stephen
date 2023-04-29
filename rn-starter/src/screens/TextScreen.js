@@ -2,6 +2,8 @@ import { StyleSheet, Text, View, TextInput } from "react-native";
 import React from "react";
 
 const TextScreen = () => {
+  const [name, setName] = React.useState("");
+  // By this way, we can use the name variable anywhere in the component.
   return (
     <View>
       <Text>TextScreen</Text>
@@ -9,7 +11,10 @@ const TextScreen = () => {
         style={styles.input}
         autoCapitalize="none"
         autoCorrect={false}
+        value={name}
+        onChangeText={(newValue) => setName(newValue)}
       ></TextInput>
+      <Text>{name}</Text>
     </View>
   );
 };
