@@ -17,7 +17,9 @@ const styles = StyleSheet.create({
   viewStyle: {
     borderWidth: 3,
     borderColor: "black",
-    alignItems: "center", // Be aware, this control is in the parent component
+    flexDirection: "row",
+    height: 200,
+    alignItems: "center",
   },
   textStyle: {
     borderWidth: 3,
