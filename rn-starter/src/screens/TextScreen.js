@@ -2,19 +2,24 @@ import { StyleSheet, Text, View, TextInput } from "react-native";
 import React from "react";
 
 const TextScreen = () => {
-  const [name, setName] = React.useState("");
+  const [Password, setPassword] = React.useState("");
   // By this way, we can use the name variable anywhere in the component.
   return (
     <View>
-      <Text>TextScreen</Text>
+      <Text>Enter Password</Text>
       <TextInput
         style={styles.input}
         autoCapitalize="none"
         autoCorrect={false}
-        value={name}
-        onChangeText={(newValue) => setName(newValue)}
+        value={Password}
+        secureTextEntry={true}
+        onChangeText={(newValue) => setPassword(newValue)}
       ></TextInput>
-      <Text>{name}</Text>
+      <Text>
+        {Password.length < 6 && Password.length > 0
+          ? "Password is too short"
+          : ""}
+      </Text>
     </View>
   );
 };
