@@ -19,7 +19,9 @@ const styles = StyleSheet.create({
     borderColor: "black",
     flexDirection: "row",
     height: 200,
-    alignItems: "center",
+    //alignItems: "center",
+    //justifyContent: "space-between",
+    justifyContent: "center",
   },
   textStyle: {
     borderWidth: 3,
